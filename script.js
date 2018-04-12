@@ -1,1 +1,5 @@
-console.log('hi');
+function test() {
+  debugger;
+}
+
+test();
