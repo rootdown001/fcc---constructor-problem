@@ -1,3 +1,9 @@
 h1 {
-  color: fuchsia;
+  color: hsl(11deg 100% 42%);
+}
+
+
+
+h1:hover {
+    color: rgb(96, 228, 8);
 }
