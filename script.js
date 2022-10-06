@@ -4,23 +4,40 @@ console.log('greetings from script.js');
 //function onClickEvent() {
 // *****************
 
-const items = [
-    {   name: "Bike",            price: 100 },
-    {   name: "TV",              price: 200 },
-    {   name: "Album",           price: 10  },
-    {   name: "Book",            price: 5   },
-    {   name: "Phone",           price: 500 },
-    {   name: "Computer",        price: 1000},
-    {   name: "Keyboard",        price: 25  }
-]
-
-const total = items.reduce((currentTotal, item) => {
-        return item.price + currentTotal;
-}, 0)
-
-console.log(total)
+function truthCheck(collection, pre) {
 
 
+  let answer;
+// let arr = [{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}];
+
+
+for (let i in collection) {
+  //console.log(collection[i])
+  //console.log(collection[i][pre])
+
+  if (collection[i][pre]) {    
+    console.log("yes");
+    answer = true;
+  } else {
+    answer = false;
+    return answer
+  }
+
+
+} 
+
+return answer;
+
+}
+
+
+
+
+console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "isBot"));
+
+console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "role"));
+
+console.log(truthCheck([{name: "Quincy", role: "Founder", isBot: false}, {name: "Naomi", role: "", isBot: false}, {name: "Camperbot", role: "Bot", isBot: true}], "name"));
 
 
 
