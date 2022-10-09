@@ -54,7 +54,7 @@ bob.setFirstName("Lance");
 bob.getFullName();
 bob.setLastName("Anderson");
 bob.getFullName();
-bob.setFullName("Oscar Meyer");
+bob.setFullName("Justin Anderson");
 bob.getFullName();
 
 
